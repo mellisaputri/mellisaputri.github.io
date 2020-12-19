@@ -185,7 +185,7 @@ section .title::after {
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    color:  #5292eb;
+    color:  crimson;
 }
 .contact .contact-content .info .head{
     font-weight: 500;
@@ -238,7 +238,7 @@ section .title::after {
 .contact .right form .button button{
     width: 100%;
     height: 100%;
-    border: 2px solid #5292eb;
+    border: 2px solid crimson;
     background: #5292eb;
     color: #fff;
     outline: none;
@@ -249,7 +249,7 @@ section .title::after {
     transition: all 0.3s ease;
 }
 .contact .right form .button button:hover{
-    color: #5292eb;
+    color: crimson;
     background: none;
 }
 
