@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>Mellisa</title>
+        <link href="Images/m.jpeg" rel="icon">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>  
+    </head>
+    <body>
+
+        <!--navbar mulai-->
+        <nav class="navbar">
+            <div class="max-width">
+            <div class="logo"><a href="indeks.html">Mellisa<span>putri</span></a></div>
+            <ul class="menu">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <li><a href="indeks.html">Home</a></li>
+                <li><a href="indeks.html">Profile</a></li>
+                <li><a href="indeks.html">Skills</a></li>
+                <li><a href="CV and address.html">Address</a></li>
+                <li><a href="CV and address.html">CV</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+        <script>
+            const navbar = document.querySelector(".navbar");
+            const menu = document.querySelector(".menu");
+            const menuBtn = document.querySelector(".menu-btn");
+            const cancelBtn = document.querySelector(".cancel-btn");
+            menuBtn.onclick = ()=>{
+                menu.classList.add("active");
+                menuBtn.classList.add("hide");
+            }
+            cancelBtn.onclick = ()=>{
+                menu.classList.remove("active");
+                menuBtn.classList.remove("hide");
+            }
+            window.onscroll = ()=>{
+                this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+            }
+        </script>
+        <script></script>
+
+        <!--home section mulai-->
+        <section class="home" id="home">
+            <div class="max-width">
+                <div class="home-content">
+                    <div class="text-1">안녕</div>
+                    <div class="text-2">My Name is Mellisa</div>
+                    <div class="text-3">And I'm a <span class="typing"></span></div>
+                </div>
+            </div>
+        </section>
+
+        <!--profile section mulai-->
+        <section class="profile" id="profile">
+            <h2 class="title">Profile</h2>
+            <div class="max-width">
+                <div class="profile-content">
+                    <div class="column left">
+                        <img src="Images/h.jpeg" alt="">
+                    </div>
+                    <div class="column right">
+                        <div class="text">My Name is Mellisa putri and I'm a <span class="typing2"></span></div>
+                        <p>My name is Mellisa Putri. This year I am 19 years old. I am a student of UIN Syarif Hidayatullah Jakarta. I have 3 month of experience as a service section.</p>
+                    </div>
+            </div>
+        </section>
+
+        <!--section skills--->
+        <section class="skills" id="skills">
+            <div class="max-width">
+                <h2 class="title">My Skills</h2>
+                <div class="skills-content">
+                    <div class="column left">
+                        <div class="text">My Skills and Experiences</div>
+                        <p>I have an experience in service section and I have some basic skills, that is English Language and Korean Language. Also, skills in Microsoft Office.</p>
+                    </div>
+                    <div class="column right">
+                        <div class="bars">
+                            <div class="info">
+                                <span>Microsoft Word</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="line ms"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>Microsoft Excel</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="line html"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>Microsoft Power Point</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="line el"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>English Language</span>
+                                <span>50%</span>
+                            </div>
+                            <div class="line led"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="mm2.js"></script>
+    </body>
+
+        <!-- footer section mulai -->
+        <footer>
+            <div class="up-content">
+                <h3>About Us</h1>
+                <p>This website is made for project needs and still needs improvement</p>
+                <ul class="social">
+                    <li><a href="https://web.facebook.com/mellisa.putri.1232/">
+                        <img src="Images/facebook.png">
+                    </a></li>
+                    <li><a href="https://www.instagram.com/igemwoyeyeo?r=nametag">
+                        <img src="Images/instagram.png">
+                    </a></li>
+                    <li><a href="https://twitter.com/mellisaputri6">
+                        <img src="Images/twitter.png">
+                    </a></li>
+                    <li><a href="https://github.com/mellisaputri">
+                        <img src="Images/github.png">
+                    </a></li>
+                </ul>
+            <div>
+            <div class="down-content">
+                <p>copyright &copy;2020 Mellisa<span>putri</span></p>
+            </div>
+        </footer>
+</html>
+<!--Website ini dibuat berdasarkan berbagai macam tutorial-->
+<!--Nama : Ahmad Rizki Husaini-->
+<!--Profesi : Nganggur-->

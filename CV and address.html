@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>Mellisa</title>
+        <link href="Images/m.jpeg" rel="icon">
+        <link href="css/Style2.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>  
+    </head>
+    <body>
+
+        <!--navbar mulai-->
+        <nav class="navbar">
+            <div class="max-width">
+            <div class="logo"><a href="indeks.html">Mellisa<span>putri</span></a></div>
+            <ul class="menu">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <li><a href="indeks.html">Home</a></li>
+                <li><a href="indeks.html">Profile</a></li>
+                <li><a href="indeks.html">Skills</a></li>
+                <li><a href="CV and address.html">Address</a></li>
+                <li><a href="CV and address.html">CV</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+
+          <!--home section mulai-->
+          <section class="home" id="home">
+            <div class="max-width">
+                <div class="home-content">
+                    <div class="text-1">안녕</div>
+                    <div class="text-2">My Name is Mellisa</div>
+                    <div class="text-3">And I'm a <span class="typing"></span></div>
+                </div>
+            </div>
+        </section>
+
+        <!--section cv mulai--->
+       <section class="CV" id="CV">
+            <h2 class="title">Curriculum Vitae</h2>
+            <div class="max-width">
+                <div class="CV-content">
+                    <div class="column left">
+                        <img src="Images/unnamed.png" alt="">
+                    </div>
+                    <div class="column right">
+                        <p>If you want to know more about me, you can download the file below</p>
+                        <a href="my-cv.pdf">Download CV</a>
+                    </div>
+            </div>
+        </section>
+
+        <!--section address mulai--->
+        <section class="Address" id="Address">
+            <div class="max-width">
+                <h2 class="title">My Address</h2>
+                <div class="Address-content">
+                    <div class="column left">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.937917838028!2d106.66614736107985!3d-6.27189452328703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fb0575f336ab%3A0x11e143171644071e!2sJl.%20Perum%20Griya%20Asri%20Raya%2C%20Jelupang%2C%20Kec.%20Serpong%20Utara%2C%20Kota%20Tangerang%20Selatan%2C%20Banten%2015323!5e0!3m2!1sid!2sid!4v1608372530848!5m2!1sid!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                    <div class="column right">
+                        <div class="text">This My Address, <span class="typing2"></span></div>
+                        <p>Jl. Perum Griya Asri Raya Blok C11 no.13, RT031/RW007, Jelupang Kec. Serpong Utara Kota Tangerang Selatan Banten 15323</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            const navbar = document.querySelector(".navbar");
+            const menu = document.querySelector(".menu");
+            const menuBtn = document.querySelector(".menu-btn");
+            const cancelBtn = document.querySelector(".cancel-btn");
+            menuBtn.onclick = ()=>{
+                menu.classList.add("active");
+                menuBtn.classList.add("hide");
+            }
+            cancelBtn.onclick = ()=>{
+                menu.classList.remove("active");
+                menuBtn.classList.remove("hide");
+            }
+            window.onscroll = ()=>{
+                this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+            }
+        </script>
+        <script src="mm3.js"></script>
+    </body>
+
+        <!-- footer section mulai -->
+        <footer>
+            <div class="up-content">
+                <h3>About Us</h1>
+                <p>This website is made for project needs and still needs improvement</p>
+                <ul class="social">
+                    <li><a href="https://web.facebook.com/mellisa.putri.1232/">
+                        <img src="Images/facebook.png">
+                    </a></li>
+                    <li><a href="https://www.instagram.com/igemwoyeyeo?r=nametag">
+                        <img src="Images/instagram.png">
+                    </a></li>
+                    <li><a href="https://twitter.com/mellisaputri6">
+                        <img src="Images/twitter.png">
+                    </a></li>
+                    <li><a href="https://github.com/mellisaputri">
+                        <img src="Images/github.png">
+                    </a></li>
+                </ul>
+            <div>
+            <div class="down-content">
+                <p>copyright &copy;2020 Mellisa<span>putri</span></p>
+            </div>
+        </footer>
+</html>
+<!--Website ini dibuat berdasarkan berbagai macam tutorial-->
+<!--Nama : Ahmad Rizki Husaini-->
+<!--Profesi : Nganggur-->
